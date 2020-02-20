@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./assets/fonts/Lato-Black.ttf"),
+  url("./assets/fonts/Lato-Bold.ttf"),
+  url("./assets/fonts/Lato-Light.ttf"),
+  url("./assets/fonts/Lato-Regular.ttf"),
+  url("./assets/fonts/Lato-Thin.ttf");
+  
+  }
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.header__navigation {
+  margin-top: 41px;
+  margin-right: 27px;
+  float: right;
+}
+
+.header__navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+}
+
+.header__navigation li {
+  float: left;
+  
+}
+
+.header__navigation ul li a {
+  color: white;
+  padding: 0 13px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header__navigation ul li a:hover {
+  color: #f06c64;
+}
+
+/* .navigation__separator {
+  margin: 0 5px;
+} */
+
+.benefit {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  margin: 0 10px 30px 10px;
+  
+}
+
+.benefit__icon {
+  
+  padding-top: 4px;
+  
+}
+
+.benefit__text {
+  /* width: 238px; */
+  margin-left: 21px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2d303a;
+  height: 89px;
+  border-bottom: 6px solid #323746;
+}
+
+
+
+.our-services__header {
+  color: #666D89;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 59px;
+  padding-left: 10px;
+
+}
+
+.our-services__text {
+  color: #666D89;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.63em;
+  font-weight: 300;
+  padding: 0 10px;
+  text-align: justify;
+
+}
+
+.our-services {
+  background-color: #f2f2f2;
+  padding: 0 30px 0 30px;
+  height: 494px;
+}
+
+.logo {
+  font-size: 25px;
+    margin-left: 41px;
+    
+    margin-top: 29px;
+    
+    font-family: Lato;
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+}
+
+.logo span {
+  color: #f06c64;
+}
+
+.benefit__header {
+  color: #666D89;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.benefit__paragraph {
+  color: #767e9e;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.8em;
+  text-align: justify;
+  
+}
+
+.slider {
+  height: 594px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+  position: relative;
+}
+
+.phones__screen_yellow {
+  background-position: -14px -135px;
+  
+  background-repeat: no-repeat;
+  width: 188px;
+    height: 333px;
+    margin-top: 118px;
+    margin-left: 126px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(./assets/images/yellowscreen.jpg);
+}
+
+.iphone-vertical {
+  margin: 53px 0 0 112px;
+ position: absolute;
+ z-index: 2;
+ 
+}
+
+.iphone-vertical__shadow {
+  z-index: 1;
+  margin: 53px 0 0 112px;
+  position: absolute;
+}
+
+.iphone-horizontal {
+  position: absolute;
+  transform: rotate(90deg);
+  margin:52px 0 0 547px;
+  z-index: 2;
+}
+
+.iphone-horizontal__shadow {
+  z-index: 1;
+  transform: rotate(90deg)
+}
+
+.shadow-outer {
+  margin:52px 0 0 547px;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+
+.slider__buttons {
+ display: flex;
+ justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  margin-top: 196px;
+  
+}
+
+.control_prev, .control_next {
+  background: none;
+  border: none;
+  width: 96px;
+  height: 200px;
+  cursor: pointer;
+  z-index: 4;
+} 
+
+.control_prev:hover, .control_next:hover {
+  background-color: #ed908b;
+}
+
+.control_prev {
+margin-left: 2px;
+}
+
+.control_next {
+ 
+}
+
+.control_next img {
+  
+  transform: rotate(180deg);
+}
+
+.try ul li {
+  display: inline-block;
+
+}
+
+
+.our-services__3-column {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 43px;
+}
+
+.navigation__separator {
+  color: #494e62;
+}
