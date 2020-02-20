@@ -169,6 +169,19 @@ body {
   background-image: url(./assets/images/yellowscreen.jpg);
 }
 
+.phones__screen_blue {
+  background-position: -125px -118px;
+  
+  background-repeat: no-repeat;
+  width: 334px;
+    height: 183px;
+    margin-top: 187px;
+    margin-left: 485px;
+  position: absolute;
+  z-index: 3;
+  background-image: url(./assets/images/screenblue.jpg);
+}
+
 .iphone-vertical {
   margin: 53px 0 0 112px;
  position: absolute;
