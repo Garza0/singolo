@@ -1,0 +1,66 @@
+@import url("./font_lato.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 10px Lato, sans-serif;  
+}
+
+
+.wrapper {
+  width: 1020px;
+  margin: auto;
+}
+
+.portfolio {
+  height: 870px;
+  background-color:#2d303a;
+}
+
+.portfolio__header {
+  color: #666d89;
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.portfolio__paragraph {
+  color: #767e9e;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 22px;
+  margin-left: 40px;
+}
+
+.filters {
+  display: flex;
+  margin: 15px 0 20px 41px;
+  
+}
+
+.portfolio__filters-btn {
+  color: #767e9e;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #767e9e;
+  border-radius: 5px; 
+  padding: 2px 6px;
+  margin-right: 10px;
+
+}
+
+.portfolio__layout-4-col {
+  width: 942px;
+    height: 603px;
+    margin-left: 40px;
+}
+
+.portfolio__images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 100%;
+}
