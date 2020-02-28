@@ -1,3 +1,8 @@
+TODO: 
+/* hover to buttons */
+/* letter spacings */
+/* pix perf to images */
+
 @import url("./font_lato.css");
 
 * {
@@ -91,9 +96,12 @@
 .about-us__team-3-col {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: 500px;
   width: 940px;
   margin-left: 40px;
   margin-top: 45px;
+  overflow: hidden;
 }
 
 .team-member__social-btn {
@@ -102,6 +110,8 @@
 
 .team-member {
   width: 300px;
+  height: 500px;
+  overflow: hidden;
 }
 
 .team-member__name {
