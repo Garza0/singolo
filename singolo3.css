@@ -1,0 +1,40 @@
+@import url("./font_lato.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font: 10px Lato, sans-serif;  
+}
+
+
+.wrapper {
+  width: 1020px;
+  margin: auto;
+}
+
+.contact_form {
+  background-color: #f06c64;
+  color: white;
+}
+
+h2 {
+  
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.contact_form__header {
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.contact_form__paragraph {
+  width: 940px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.7em;
+  text-align: justify;
+  margin-top: 18px;
+  margin-left: 40px;
+}
