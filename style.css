@@ -132,12 +132,16 @@ html {
 }
 
 .benefit__paragraph {
+  height: 64px;
+  width: 217px;
+  text-overflow: ellipsis;
   color: #767e9e;
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
   line-height: 1.8em;
   text-align: justify;
+  overflow: hidden;
   
 }
 
@@ -220,10 +224,18 @@ html {
   height: 200px;
   z-index: 4;
   cursor: pointer;
+  
 } 
 
-.control_prev:hover, .control_next:hover {
-  background-color: #ed908b;
+.control_prev:hover {
+  background: linear-gradient(270deg, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0) 100%);
+  border-radius: 1%;
+}
+
+.control_next:hover {
+  background: linear-gradient(90deg, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0) 100%);
+border-radius: 1%;
+
 }
 
 .control_prev {
@@ -361,6 +373,7 @@ margin-left: 2px;
   margin-top: 13px;
   letter-spacing: -0.2px;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .team-member__info {
@@ -427,6 +440,7 @@ margin-left: 2px;
   padding: 0 15px 1px;
   margin-bottom: 16px;
   width: calc(100% - 30px);
+  color: #f0d8d9;
 }
 
 input::placeholder, textarea::placeholder{
