@@ -326,17 +326,18 @@ margin-left: 2px;
 }
 
 .portfolio__layout-4-col {
-  width: 941px;
-    height: 603px;
-    margin-left: 40px;
+  
+    margin-left: 40px; 
 }
 
 .portfolio__images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-  height: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(4, 220px);
+  grid-template-rows: repeat(3, 187px);
+  height: 601px;
+  overflow: hidden;
+
 }
 
 .about-us {
@@ -383,6 +384,7 @@ margin-left: 2px;
   margin-top: 8px;
   line-height: 1.8em;
   letter-spacing: -0.06px;
+  text-align: justify;
 }
 
 .team-member__social-btn {
