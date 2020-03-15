@@ -11,3 +11,10 @@ const slidePhone = document.querySelectorAll('#slide-phone')
 slidePhone.forEach(i => i.addEventListener('click', e => {
   e.target.previousElementSibling.classList.toggle('screen-off')
 }))
+
+const portfolioImages = document.querySelectorAll('.portfolio__images>li>img')
+
+portfolioImages.forEach(i => i.addEventListener('click', e => {
+  portfolioImages.forEach(i => i.classList.remove('portfolio__images--selected'))
+  e.target.classList.add('portfolio__images--selected')
+}))

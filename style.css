@@ -342,6 +342,7 @@ margin-left: 2px;
   grid-template-rows: repeat(3, 187px);
   height: 601px;
   overflow: hidden;
+  cursor: pointer;
 
 }
 
@@ -565,4 +566,10 @@ footer {
 
 .screen-off {
   background-image: none;
+}
+
+
+.portfolio__images--selected {
+  border: 5px solid #F06C64;
+  width: 210px;
 }
