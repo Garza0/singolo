@@ -46,6 +46,7 @@ html {
 
 
 .header__navigation {
+  color: white;
   margin-top: 41px;
   margin-right: 27px;
   float: right;
@@ -64,15 +65,19 @@ html {
   float: left;
 }
 
-.header__navigation ul li a {
-  color: white;
+.navigation__link a {
+  
   padding: 0 13px;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.header__navigation ul li a:hover {
+.navigation__link a:hover {
+  color: #f06c64;
+}
+
+.header__navigation--active {
   color: #f06c64;
 }
 
@@ -558,4 +563,6 @@ footer {
   background-color: #666d89;
 }
 
-
+.screen-off {
+  background-image: none;
+}

@@ -7,23 +7,24 @@
   <title>Singolo</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" id="home">
       <h1 class="logo">SINGOLO<span>*</span></h1>
       <nav class="header__navigation">
-        <ul>
-          <li><a href="#">HOME</a></li>
+        <ul id="navigation">
+          <li class="navigation__link"><a href="#home">HOME</a></li>
           <li class="navigation__separator">·</li>
-          <li><a href="#">SERVICES</a></li>
+          <li class="navigation__link"><a href="#services">SERVICES</a></li>
           <li class="navigation__separator">·</li>
-          <li><a href="#">PORTFOLIO</a></li>
+          <li class="navigation__link"><a href="#portfolio">PORTFOLIO</a></li>
           <li class="navigation__separator">·</li>
-          <li><a href="#">ABOUT</a></li>
+          <li class="navigation__link"><a href="#about">ABOUT</a></li>
           <li class="navigation__separator">·</li>
-          <li><a href="#">CONTACT</a></li>
+          <li class="navigation__link"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -37,11 +38,12 @@
       <div class="slider__slides">
         <div class="slides__phones">
           <div class="phones__screen_yellow"></div>
-          <img src="./assets/images/iPhone-Vertical.png" alt="iPhone-Vertical" class="iphone-vertical">
+          <img src="./assets/images/iPhone-Vertical.png" alt="iPhone-Vertical" class="iphone-vertical" id="slide-phone">
           <img src="./assets/images/Shadow.png" alt="shadow" class="iphone-vertical__shadow">
 
           <div class="phones__screen_blue"></div>
-          <img src="./assets/images/iPhone-Vertical.png" alt="iPhone-Horizontal" class="iphone-horizontal">
+          <img src="./assets/images/iPhone-Vertical.png" alt="iPhone-Horizontal" class="iphone-horizontal"
+            id="slide-phone">
 
           <div class="shadow-outer">
             <img src="./assets/images/Shadow.png" alt="shadow" class="iphone-horizontal__shadow">
@@ -50,7 +52,7 @@
       </div>
     </div>
 
-    <section class="our-services">
+    <section class="our-services" id="services">
       <h2 class="our-services__header">Our Services</h2>
       <p class="our-services__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non
         commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
@@ -134,7 +136,7 @@
 
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2 class="portfolio__header">
         Portfolio
       </h2>
@@ -167,7 +169,7 @@
       </div>
     </section>
 
-    <section class="about-us">
+    <section class="about-us" id="about">
       <h2 class="about-us__header">
         About Us
       </h2>
@@ -229,7 +231,7 @@
       </ul>
     </section>
 
-    <section class="get-a-quote">
+    <section class="get-a-quote" id="contact">
       <h2 class="get-a-quote__header">
         Get a Quote
       </h2>
