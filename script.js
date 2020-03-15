@@ -18,3 +18,15 @@ portfolioImages.forEach(i => i.addEventListener('click', e => {
   portfolioImages.forEach(i => i.classList.remove('portfolio__images--selected'))
   e.target.classList.add('portfolio__images--selected')
 }))
+
+const portfolioImagesToSort = document.querySelector(".portfolio__images")
+
+
+const filterBtns = document.querySelectorAll('.portfolio__filters-btn')
+filterBtns.forEach(i => i.addEventListener('click', e => shuffle(portfolioImagesToSort)))
+
+function shuffle(ul) {
+  for (let i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+  }
+}
