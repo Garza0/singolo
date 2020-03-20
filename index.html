@@ -11,24 +11,24 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header" id="home">
-      <h1 class="logo">SINGOLO<span>*</span></h1>
-      <nav class="header__navigation">
-        <ul id="navigation">
-          <li class="navigation__link"><a href="#home">HOME</a></li>
-          <li class="navigation__separator">·</li>
-          <li class="navigation__link"><a href="#services">SERVICES</a></li>
-          <li class="navigation__separator">·</li>
-          <li class="navigation__link"><a href="#portfolio">PORTFOLIO</a></li>
-          <li class="navigation__separator">·</li>
-          <li class="navigation__link"><a href="#about">ABOUT</a></li>
-          <li class="navigation__separator">·</li>
-          <li class="navigation__link"><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header class="header" id="home">
+    <h1 class="logo">SINGOLO<span>*</span></h1>
+    <nav class="header__navigation">
+      <ul id="navigation">
+        <li class="navigation__link"><a href="#home">HOME</a></li>
+        <li class="navigation__separator">·</li>
+        <li class="navigation__link"><a href="#services">SERVICES</a></li>
+        <li class="navigation__separator">·</li>
+        <li class="navigation__link"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="navigation__separator">·</li>
+        <li class="navigation__link"><a href="#about">ABOUT</a></li>
+        <li class="navigation__separator">·</li>
+        <li class="navigation__link"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <div class="wrapper">
     <div class="slider">
       <div class="slider__buttons">
         <button class="control_prev"><img src="./assets/icons/prev.png" alt="next arrow"></button>
@@ -36,7 +36,7 @@
       </div>
 
       <div class="slider__slides">
-        <div class="slides__phones">
+        <div class="slides__phones slide">
           <div class="phones__screen_yellow"></div>
           <img src="./assets/images/iPhone-Vertical.png" alt="iPhone-Vertical" class="iphone-vertical" id="slide-phone">
           <img src="./assets/images/Shadow.png" alt="shadow" class="iphone-vertical__shadow">
@@ -48,6 +48,9 @@
           <div class="shadow-outer">
             <img src="./assets/images/Shadow.png" alt="shadow" class="iphone-horizontal__shadow">
           </div>
+        </div>
+        <div class="slides__2 slide slide--active">
+          <img src="./assets/images/slide2.jpg" alt="slide 2 phones">
         </div>
       </div>
     </div>
@@ -261,7 +264,8 @@
             <li><img src="./assets/icons/phone-small.png" alt="phone"><a href="tel:03528 331 86 35">03528 331 86 35</a>
             </li>
             <li><img src="./assets/icons/mail-small.png" alt="mail"><a
-                href="mailto:info@singolo.com">info@singolo.com</a></li>
+                href="mailto:info@singolo.com">info@singolo.com</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -278,6 +282,12 @@
         <li><a href="#"><img src="./assets/icons/linkedin.png" alt="linkedin"></a></li>
       </ul>
     </footer>
+  </div>
+
+  <div class="modal">
+    <div class="modal__content">
+
+    </div>
   </div>
 </body>
 
