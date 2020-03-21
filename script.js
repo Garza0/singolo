@@ -115,25 +115,34 @@ const subject = document.getElementById('subject')
 const describe = document.querySelector('#describe')
 let subjectValue = document.getElementById('subject__value')
 let descriptionValue = document.querySelector('#description__value')
+const name = document.querySelector('#name')
+const email = document.querySelector('#email')
 
-submitBtn.addEventListener('click', (e) => {
+
+
+contactForm.addEventListener('submit', (e) => {
   e.preventDefault()
+  if (name.checkValidity() && email.checkValidity()) {
 
 
-  subjectValue.innerText = subject.value ? `Subject: ${subject.value}` : 'No subject'
-  descriptionValue.innerText = describe.value ? `Decription: ${describe.value}` : 'No description'
+    subjectValue.innerText = subject.value.trim() ? `Subject: ${subject.value}` : 'No subject'
+    descriptionValue.innerText = describe.value.trim() ? `Decription: ${describe.value}` : 'No description'
 
 
-  modal.classList.add('modal--active')
+    modal.classList.add('modal--active')
+  }
 
 })
+
 
 modalOkBtn.addEventListener('click', e => {
   modal.classList.remove('modal--active')
   contactForm.reset()
 })
 
-// modal.addEventListener('click', e => {
-//   modal.classList.remove('modal--active')
-//   contactForm.reset()
-// })
+modal.addEventListener('click', e => {
+  if (e.target.classList[0] == 'modal') {
+    modal.classList.remove('modal--active')
+    contactForm.reset()
+  }
+})
