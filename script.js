@@ -103,3 +103,37 @@ function onScroll(event) {
   })
 
 }
+
+
+//submit
+
+const contactForm = document.querySelector('.contact-form')
+const submitBtn = document.querySelector('.contact-form__send-btn')
+const modalOkBtn = document.querySelector('.modal__ok-btn')
+const modal = document.querySelector('.modal')
+const subject = document.getElementById('subject')
+const describe = document.querySelector('#describe')
+let subjectValue = document.getElementById('subject__value')
+let descriptionValue = document.querySelector('#description__value')
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault()
+
+
+  subjectValue.innerText = subject.value ? `Subject: ${subject.value}` : 'No subject'
+  descriptionValue.innerText = describe.value ? `Decription: ${describe.value}` : 'No description'
+
+
+  modal.classList.add('modal--active')
+
+})
+
+modalOkBtn.addEventListener('click', e => {
+  modal.classList.remove('modal--active')
+  contactForm.reset()
+})
+
+// modal.addEventListener('click', e => {
+//   modal.classList.remove('modal--active')
+//   contactForm.reset()
+// })

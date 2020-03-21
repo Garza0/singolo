@@ -647,15 +647,36 @@ footer {
   background-color: #0008;
   left: 0;
   top: 0;
+
   z-index: 5;
 }
 
+.modal--active {
+  display: block;
+}
+
 .modal__content {
-  background-color: #ffffff;
+  text-align: center;
+  background-color: #F2F2F2;
   margin: calc(50vh - 150px) auto;
+  font-size: 1.7rem;
+  color: #2d303a;
+  border-radius: 5px;
+  width: 300px;
   
-  border: 1px solid #000;
-  width: 500px;
-  height: 300px;
+  line-height: 3.7rem;
+  padding: 20px;
 
 }
+
+
+.modal__ok-btn{
+  cursor: pointer;
+    background-color: #2d303a;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    color: #f0d8d9;
+    margin-top: 20px;
+}
+

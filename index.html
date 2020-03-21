@@ -248,8 +248,8 @@
         <form class="contact-form" action="" method="post">
           <input type="text" class="contact-form__input" placeholder="Name (Required)" required>
           <input type="email" class="contact-form__input" name="email" placeholder="Email (Required)" required>
-          <input type="text" class="contact-form__input" name="subject" placeholder="Subject">
-          <textarea type="text" name="describe" class="contact-form__textarea"
+          <input type="text" class="contact-form__input" id="subject" name="subject" placeholder="Subject">
+          <textarea type="text" name="describe" id="describe" class="contact-form__textarea"
             placeholder="Describe your project in detail..."></textarea>
           <input type="submit" class="contact-form__send-btn" value="Submit">
         </form>
@@ -286,7 +286,10 @@
 
   <div class="modal">
     <div class="modal__content">
-
+      <p>The letter was sent</p>
+      <p id="subject__value">No subject</p>
+      <p id="description__value">No description</p>
+      <button class="modal__ok-btn">OK</button>
     </div>
   </div>
 </body>
