@@ -146,3 +146,15 @@ modal.addEventListener('click', e => {
     contactForm.reset()
   }
 })
+
+
+const HAMBURGER = document.querySelector('.hamburger')
+const SIDEMENU = document.querySelector('.side-menu')
+
+HAMBURGER.onclick = () => {
+  HAMBURGER.classList.toggle('hamburger--active')
+  SIDEMENU.classList.toggle('side-menu--active')
+}
+
+
+
