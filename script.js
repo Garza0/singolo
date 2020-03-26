@@ -84,9 +84,9 @@ function shuffle(ul) {
 
 
 //nav scroll
-document.addEventListener('scroll', onScroll)
+document.addEventListener('scroll', onScroll(navLinks))
 
-function onScroll(event) {
+function onScroll() {
   const curPos = window.scrollY
   const divs = document.querySelectorAll('.wrapper>*')
   const links = document.querySelectorAll('.navigation__link a')
@@ -150,10 +150,12 @@ modal.addEventListener('click', e => {
 
 const HAMBURGER = document.querySelector('.hamburger')
 const SIDEMENU = document.querySelector('.side-menu')
+const LOGO = document.querySelector('.logo')
 
 HAMBURGER.onclick = () => {
   HAMBURGER.classList.toggle('hamburger--active')
   SIDEMENU.classList.toggle('side-menu--active')
+  LOGO.classList.toggle('logo--hidden')
 }
 
 
