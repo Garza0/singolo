@@ -84,9 +84,9 @@ function shuffle(ul) {
 
 
 //nav scroll
-document.addEventListener('scroll', onScroll(navLinks))
+document.addEventListener('scroll', onScroll)
 
-function onScroll() {
+function onScroll(event) {
   const curPos = window.scrollY
   const divs = document.querySelectorAll('.wrapper>*')
   const links = document.querySelectorAll('.navigation__link a')
@@ -151,12 +151,42 @@ modal.addEventListener('click', e => {
 const HAMBURGER = document.querySelector('.hamburger')
 const SIDEMENU = document.querySelector('.side-menu')
 const LOGO = document.querySelector('.logo')
+const OVERLAY = document.querySelector('.side-menu__overlay')
 
 HAMBURGER.onclick = () => {
+  OVERLAY.classList.toggle('overlay--active')
   HAMBURGER.classList.toggle('hamburger--active')
   SIDEMENU.classList.toggle('side-menu--active')
   LOGO.classList.toggle('logo--hidden')
+
+
+
 }
 
+const SIDEMENUITEM = document.querySelectorAll('.side-menu__list-item')
 
+SIDEMENUITEM.forEach(e => e.onclick = () => {
+  SIDEMENUITEM.forEach(e => e.classList.remove('side-menu__list-item--active'))
+  e.classList.add('side-menu__list-item--active')
+  hideSideMenu()
+
+})
+
+function hideSideMenu() {
+  SIDEMENU.classList.remove('side-menu--active')
+  HAMBURGER.classList.remove('hamburger--active')
+  LOGO.classList.remove('logo--hidden')
+  OVERLAY.classList.remove('overlay--active')
+}
+
+OVERLAY.onclick = () => {
+  hideSideMenu()
+}
+
+// .addEventListener('click', e => {
+//   if (e.target.classList[0] == 'side-menu') {
+//     SIDEMENU.classList.remove('side-menu--active')
+
+//   }
+// })
 
