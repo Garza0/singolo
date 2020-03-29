@@ -162,7 +162,7 @@ top: calc(50% + 50px);
   margin-top: 27px;
 }
 
-.side-menu__list-item--active {
+.side-menu__list-item:hover  {
   color: #F06C64;
 }
 
@@ -304,7 +304,7 @@ top: calc(50% + 50px);
   border-bottom: 6px solid #ea676b;
   position: relative;
   overflow: hidden;
-  height: 56.3vw;
+  height: 58vw;
 }
 
 .slide {
@@ -361,7 +361,7 @@ top: calc(50% + 50px);
 
 .phones__screen_yellow {
   width: 18.4%;
-  height: 56%;
+  /* height: 56%; */
   margin-top: 11.6%;
   margin-left: 12.4%;
   position: absolute;
@@ -420,45 +420,43 @@ top: calc(50% + 50px);
   display: flex;
   justify-content: space-between;
   width: 100%;
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: 46%;
   margin-top: 0;
 }
 
 .control_prev, .control_next {
-  background: none;
-  width: 96px;
-  height: 200px;
+  
+  width: 1.5%;
+  position: absolute;
   z-index: 4;
   cursor: pointer;
   
 } 
 
 .control_prev:hover {
-  background: linear-gradient(270deg, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0) 100%);
+  
   border-radius: 1%;
 }
 
 .control_next:hover {
-  background: linear-gradient(90deg, rgba(255,255,255,0.3) 10%, rgba(255,255,255,0) 100%);
+  
 border-radius: 1%;
 
 }
 
 .control_prev {
-margin-left: 2px;
+left: 5%;
 }
 
-
-.control_next img {
-  
+.control_next {
+  right: 5%;
   transform: rotate(180deg);
 }
 
-.try ul li {
-  display: inline-block;
 
-}
+
+
 
 
 .our-services__3-column {
@@ -580,7 +578,7 @@ margin-left: 2px;
 
 .team-member {
   margin: auto;
-  max-width: 315px;
+  /* max-width: 315px; */
   /* max-height: 500px; */
   overflow: hidden;
 
@@ -849,11 +847,19 @@ h2::before {
   }
 
 
+  .benefit {
+  
+    /* width: 500px; */
+   
+    
+  }
+
+
 }
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
  
   .header {
     height: 71px;
@@ -875,9 +881,20 @@ h2::before {
       display: block;
     }
 
+    .copyright {
+      display: none;
+    }
+
+    .social-btn {
+      margin: auto;
+    }
    
+    .contact-form__send-btn {
+      width: 100%;
+    }
   
     .portfolio__images {
+      gap: 14px;
       grid-template-areas: 
       "a a"
       "a a"
@@ -913,10 +930,22 @@ h2::before {
   .contact-form__group {
     flex-direction: column;
   }
+
+  .contact-information {
+    width: auto;
+    margin: 0;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  
+  } 
 }
 
 @media (man-width: 375px) {
-
+  .benefit {
+    width: 100%;
+}
 
   .about-us__team-3-col {
     flex-direction: column;
@@ -926,7 +955,7 @@ h2::before {
     
   }
 
-
+  
  
 
 

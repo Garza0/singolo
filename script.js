@@ -1,7 +1,7 @@
 //slider
 
 const slides = document.querySelectorAll('.slide')
-const sliderControls = document.querySelectorAll('.slider__buttons>button')
+const sliderControls = document.querySelectorAll('.slider__buttons>img')
 let currentSlide = 0
 let isEnabled = true
 
@@ -163,14 +163,14 @@ HAMBURGER.onclick = () => {
 
 }
 
-const SIDEMENUITEM = document.querySelectorAll('.side-menu__list-item')
+// const SIDEMENUITEM = document.querySelectorAll('.side-menu__list-item')
 
-SIDEMENUITEM.forEach(e => e.onclick = () => {
-  SIDEMENUITEM.forEach(e => e.classList.remove('side-menu__list-item--active'))
-  e.classList.add('side-menu__list-item--active')
-  hideSideMenu()
+// SIDEMENUITEM.forEach(e => e.onclick = () => {
+//   SIDEMENUITEM.forEach(e => e.classList.remove('side-menu__list-item--active'))
+//   e.classList.add('side-menu__list-item--active')
+//   hideSideMenu()
 
-})
+// })
 
 function hideSideMenu() {
   SIDEMENU.classList.remove('side-menu--active')
