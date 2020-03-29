@@ -912,6 +912,8 @@ h2::before {
     "a"
     "a"
     "a";    
+
+    grid-gap: 34px;
   }
 
   .our-services {
@@ -942,21 +944,49 @@ h2::before {
   } 
 }
 
-@media (man-width: 375px) {
+@media (max-width: 375px) {
   .benefit {
     width: 100%;
+}
+
+.benefit__paragraph {
+  width: auto;
 }
 
   .about-us__team-3-col {
     flex-direction: column;
     
-    margin: 45px 40px 0;
+    margin: 45px 0 0;
    
     
   }
 
+
+  .header {
+    padding: 0 30px;
+
+  }
+
+  .our-services {
+  padding: 25.3px 30px 25px;
+
+  }
+
+  .portfolio {
+    padding: 42px 30px 42px;
+
+  }
   
+  .about-us {
+  padding: 33px 30px 45px;
+
+  }
  
+  .get-a-quote {
+  padding: 44px 30px 42px;
+
+  }
+
 
 
 
